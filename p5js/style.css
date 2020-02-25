@@ -1,0 +1,48 @@
+@font-face
+{
+    font-family: 'thand';
+    src: url('thand.woff2') format('woff2'),
+         url('thand.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+div.absatz
+{
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+    border: 3px solid #73AD21;
+    color: red; /* Schriftfarbe ROT */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 300%;
+    font-weight: 300;
+    z-index: -1;
+    background-color:  blue;
+}
+
+body
+{
+    font-family: thand;
+}
+
+.sliderStyle {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  .sliderStyle::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
